@@ -9,7 +9,7 @@ from pydantic import BaseModel, Field
 web_search_tool = WebsiteSearchTool()
 seper_dev_tool = SerperDevTool()
 file_read_tool = FileReadTool(
-    file_path='job_description_example.md',
+    file_path='src/job_posting/job_description_example.md',
     description='A tool to read the job description example file.'
 )
 
@@ -92,5 +92,5 @@ class JobPostingCrew:
             agents=self.agents,  # Automatically created by the @agent decorator
             tasks=self.tasks,  # Automatically created by the @task decorator
             process=Process.sequential,
-            verbose=2,
+            verbose=True,
         )
