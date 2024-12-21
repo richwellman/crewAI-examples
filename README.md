@@ -27,3 +27,12 @@ Starting your own example
 - [Stock Analysis](https://github.com/joaomdmoura/crewAI-examples/tree/main/stock_analysis)
 - [Landing Page Generator](https://github.com/joaomdmoura/crewAI-examples/tree/main/landing_page_generator)
 - [CrewAI + LangGraph](https://github.com/joaomdmoura/crewAI-examples/tree/main/CrewAI-LangGraph)
+
+### Codespaces setup
+- use image defined in .devcontainer folder
+- Add crewenv/ to .gitignore
+- Had to add numpy version 2.2.0 to pyproject.toml requirements.  2.2.1 could not be installed.
+- Create virtual env in root folder of project
+```
+python3 -m venv crewenv
+```
