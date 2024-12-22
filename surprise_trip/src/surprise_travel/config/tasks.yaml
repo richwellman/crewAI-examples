@@ -26,7 +26,7 @@ personalized_activity_planning_task:
 
 restaurant_scenic_location_scout_task:
   description: >
-    Find highly-rated restaurants and dining experiences at {destination}.
+    Find highly-rated restaurants and dining experiences near {hotel_location}.
     Recommend scenic locations and fun activities that align with the traveler's preferences.
     Use internet search tools, restaurant review sites, and travel guides.
     Make sure to find a variety of options to suit different tastes and budgets, and ratings for them.
