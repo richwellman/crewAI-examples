@@ -1,4 +1,15 @@
 from typing import List
+from dotenv import load_dotenv
+import os
+from langtrace_python_sdk import langtrace
+
+load_dotenv()
+LANGTRACE_API_KEY=os.getenv('LANGTRACE_API_KEY')
+langtrace.init(api_key=LANGTRACE_API_KEY)
+
+# Now import CrewAI modules
+from crewai import Agent, Task, Crew
+
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
 
