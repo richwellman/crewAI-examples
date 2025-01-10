@@ -2,3 +2,4 @@
 .env
 agentops.log
 crewenv/
+*.csv
