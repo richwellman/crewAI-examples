@@ -2,6 +2,7 @@ python-dotenv==1.0.1
 crewai==0.95.0
 crewai-tools==0.25.8
 agentops==0.3.21
+
 langchain==0.3.14
 langchain-experimental==0.3.4
 langchain-openai==0.2.14
