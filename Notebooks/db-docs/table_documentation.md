@@ -1,3 +1,4 @@
+```markdown
 # Comprehensive Overview of Table 'netflix_titles'
 
 The `netflix_titles` table provides a detailed dataset concerning shows available on Netflix, including their unique identifiers, types, titles, creators, and additional essential details.
@@ -14,7 +15,7 @@ The `netflix_titles` table provides a detailed dataset concerning shows availabl
 | country       | TEXT     | Country where the show is produced.                                                                 |
 | date_added    | TEXT     | Date when the show was added to the Netflix library.                                               |
 | release_year  | BIGINT   | Year of release of the show.                                                                        |
-| rating        | TEXT     | Content rating of the show (e.g., PG, TV-MA).                                                      |
+| rating        | TEXT     | Content rating of the show (e.g., PG-13, TV-MA) indicating suitability for audiences.             |
 | duration      | TEXT     | Duration of the show (for movies, in minutes; for TV shows, indicating the number of seasons).    |
 | listed_in     | TEXT     | Genres of the show, categorizing it into different types (e.g., Drama, Comedy, Documentary).        |
 | description   | TEXT     | Brief description summarizing the plot or premise of the show.                                     |
@@ -33,3 +34,4 @@ The `netflix_titles` table provides a detailed dataset concerning shows availabl
 | s8      | Movie    | Sankofa                             | Haile Gerima                | Kofi Ghanaba, Oyafunmike Ogunlano, Alexandra Duah, Nick Medley, Mutabaruka, Afemo Omilami, Reggie Carter, Mzuri                  | United States, Ghana, Burkina Faso, United Kingdom, Germany, Ethiopia | September 24, 2021 | 1993         | TV-MA  | 125 min      | Dramas, Independent Movies, International Movies | On a photo shoot in Ghana, an American model slips back in time, becomes enslaved on a plantation and bears witness to the agony of her ancestral past.                |
 | s9      | TV Show  | The Great British Baking Show       | Andy Devonshire             | Mel Giedroyc, Sue Perkins, Mary Berry, Paul Hollywood                                                                           | United Kingdom        | September 24, 2021 | 2021         | TV-14  | 9 Seasons     | British TV Shows, Reality TV           | A talented batch of amateur bakers face off in a 10-week competition, whipping up their best dishes in the hopes of being named the U.K.'s best.                      |
 | s10     | Movie    | The Starling                        | Theodore Melfi              | Melissa McCarthy, Chris O'Dowd, Kevin Kline, Timothy Olyphant, Daveed Diggs, Skyler Gisondo, Laura Harrier, Rosalind Chao, Kimberly Quinn, Loretta Devine, Ravi Kapoor | United States         | September 24, 2021 | 2021         | PG-13  | 104 min      | Comedies, Dramas                       | A woman adjusting to life after a loss contends with a feisty bird that’s taken over her garden — and a husband who’s struggling to find a way forward.                 |
+```
