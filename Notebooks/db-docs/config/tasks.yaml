@@ -1,0 +1,25 @@
+table_description_task:
+  description: >
+    Provide the comprehensive overview for the data in table {table}, so that
+    it's easy to understand the structure of the data. This task is crucial to put together the documentation for our database
+  expected_output: >
+    A comprehensive overview of table {table} in md format. Include 2 sections: columns (list of columns with their types) and examples (the first 10 rows from table).
+
+table_documentation_task:
+  description: >
+    Using provided information about the table, put together the detailed documentation for this table so that people can use it in practice
+  expected_output: >
+    Well-written detailed documentation describing the data scheme for the table {table} in markdown format,
+    that gives the table overview in 1-2 sentences then then describes each columm. Structure the columns description as a markdown table with column name, type and description.
+    The documentation is based ONLY on the information provided by the database specialist without any additions.
+
+qa_review_task:
+  description: >
+    Review the draft documentation provided by the technical writer.
+    Ensure that the documentation fully answers all the questions: the purpose of the table and its structure in the form of markdown table.
+    Make sure that the documentation is consistent with the  information provided by the database specialist.
+    Double check that there are no irrelevant comments in the final version of documentation.
+  expected_output: >
+    A reviewed version of the documentation in markdown format. The reviewed version should be free from irrelevant comments and should be consistent with the information provided by the database specialist.
+  
+  
