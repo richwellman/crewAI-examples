@@ -19,7 +19,7 @@ def run():
     """
     inputs = {
         'topic': 'Sailpoint',
-        'current_year': str(datetime.now().year)
+        'current_year': '2025'
     }
     
     try:

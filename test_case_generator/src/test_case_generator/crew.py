@@ -1,10 +1,19 @@
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
+from crewai_tools import ScrapeWebsiteTool
 from crewai.knowledge.source.crew_docling_source import CrewDoclingSource
+import agentops
+
+
 
 # If you want to run a snippet of code before or after the crew starts, 
 # you can use the @before_kickoff and @after_kickoff decorators
 # https://docs.crewai.com/concepts/crews#example-crew-class-with-decorators
+
+agentops.init()
+
+tool = ScrapeWebsiteTool(website_url='https://www.sailpoint.com/products/identity-security-cloud')
+
 
 # Create a text file knowledge source
 text_source = CrewDoclingSource(
@@ -27,7 +36,8 @@ class TestCaseGenerator():
 	def researcher(self) -> Agent:
 		return Agent(
 			config=self.agents_config['researcher'],
-			verbose=True
+			verbose=True,
+			tools=[tool]
 		)
 
 	@agent
