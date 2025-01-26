@@ -1,14 +1,12 @@
 from typing import List
 from dotenv import load_dotenv
 import os
-import agentops
+# import agentops
+from langtrace_python_sdk import langtrace
 
 load_dotenv()
 
-
-
-# Now import CrewAI modules
-from crewai import Agent, Task, Crew
+langtrace.init()
 
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
