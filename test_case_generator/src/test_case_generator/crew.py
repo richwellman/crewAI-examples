@@ -33,17 +33,17 @@ class TestCaseGenerator():
 	# If you would like to add tools to your agents, you can learn more about it here:
 	# https://docs.crewai.com/concepts/agents#agent-tools
 	@agent
-	def researcher(self) -> Agent:
+	def test_case_generator(self) -> Agent:
 		return Agent(
-			config=self.agents_config['researcher'],
+			config=self.agents_config['test_case_generator'],
 			verbose=True,
 			tools=[tool]
 		)
 
 	@agent
-	def reporting_analyst(self) -> Agent:
+	def test_case_writer(self) -> Agent:
 		return Agent(
-			config=self.agents_config['reporting_analyst'],
+			config=self.agents_config['test_case_writer'],
 			verbose=True
 		)
 
@@ -51,15 +51,15 @@ class TestCaseGenerator():
 	# task dependencies, and task callbacks, check out the documentation:
 	# https://docs.crewai.com/concepts/tasks#overview-of-a-task
 	@task
-	def research_task(self) -> Task:
+	def test_case_generator_task(self) -> Task:
 		return Task(
-			config=self.tasks_config['research_task'],
+			config=self.tasks_config['test_case_generator_task'],
 		)
 
 	@task
-	def reporting_task(self) -> Task:
+	def test_case_writer_task(self) -> Task:
 		return Task(
-			config=self.tasks_config['reporting_task'],
+			config=self.tasks_config['test_case_writer_task'],
 			output_file='report.md'
 		)
 

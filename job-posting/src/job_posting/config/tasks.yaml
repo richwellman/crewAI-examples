@@ -52,4 +52,4 @@ industry_analysis_task:
   expected_output: >
     A detailed analysis report that identifies major industry trends, challenges, and opportunities relevant
     to the company's domain and the specific job role. This report should provide strategic insights on positioning
-    the job role and the company as an attractive choice for potential candidates.
+    the job role and the company as an attractive choice for potential candidates. Fromatrted in markdown.

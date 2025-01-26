@@ -17,7 +17,7 @@ from crewai.project import CrewBase, agent, crew, task
 from crewai_tools import SerperDevTool, ScrapeWebsiteTool, WebsiteSearchTool, FileReadTool
 from pydantic import BaseModel, Field
 
-agentops.init()
+# agentops.init()
 
 web_search_tool = WebsiteSearchTool()
 seper_dev_tool = SerperDevTool()
@@ -95,7 +95,8 @@ class JobPostingCrew:
     def industry_analysis_task(self) -> Task:
         return Task(
             config=self.tasks_config['industry_analysis_task'],
-            agent=self.research_agent()
+            agent=self.research_agent(),
+            # output_file='industry_analysis.md'
         )
 
     @crew
@@ -105,5 +106,6 @@ class JobPostingCrew:
             agents=self.agents,  # Automatically created by the @agent decorator
             tasks=self.tasks,  # Automatically created by the @task decorator
             process=Process.sequential,
+            #full_output=True,
             verbose=True,
         )
